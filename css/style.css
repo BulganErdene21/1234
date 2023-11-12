@@ -305,3 +305,60 @@ body, ul {
     font-family: 'Roboto-Semibold', sans-serif;
     font-size: 30px;
   }
+
+  .instructor article {
+    padding-left: 160px;
+    padding-right: 160px;
+    position: relative;
+    display: flex;
+}
+
+.ring {
+    position: absolute;
+    width: 346px;
+    height: 346px;
+    border: 7px solid red;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+    padding-left: 150px;
+    padding-top: 100px;
+}
+
+.text-content {
+    padding-left: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    box-align: center;
+    order: 1;
+}
+.text-content p{
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.text-content h2{
+    font-size: 40px;
+    padding-right: 30px;
+}
+.text-content h2,
+.text-content p {
+    margin: 0;
+}
+.text-content a{
+    text-decoration: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: flex;
+    width: 213px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #000000;
+}
