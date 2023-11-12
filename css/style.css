@@ -273,3 +273,35 @@ body, ul {
 .review-card p {
     font-size: 15px;
 }
+.statistics {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: #4976CE;
+    width: 1440px;
+    height: 150px;
+  }
+  
+  .stat {
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .stat-number,
+  .stat-label {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .stat-number {
+    font-family: 'Roboto-Bold';
+    font-size: 45px;
+  }
+  
+  .stat-label {
+    font-family: 'Roboto-Semibold';
+    font-size: 30px;
+  }
