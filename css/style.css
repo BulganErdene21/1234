@@ -160,3 +160,62 @@ body, ul {
     display: block;
     margin: 0 auto; 
 }
+.intro {
+    display: flex;
+    padding-left: 160px;
+    padding-right: 160px;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.content-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+  
+.intro-text-holder,
+.intro-img-holder {
+    flex: 1;
+    padding: 20px;
+}
+  
+.intro-text-holder {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-align: center;
+    order: 1;
+}
+
+.intro-pg {
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.intro-h2,
+.intro-pg {
+    margin: 0;
+}
+
+.intro-img-holder {
+    order: 2;
+}
+  
+.intro-h2 {
+    font-size: 45px;
+    color: #000000;
+}
+  
+.intro-img-holder img {
+    max-width: 100%;
+    height: auto;
+}
+.content-block:nth-child(2) .intro-img-holder {
+    order: 1;
+}
+  
+.content-block:nth-child(2) .intro-text-holder {
+    order: 2;
+}
