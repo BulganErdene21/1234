@@ -5,8 +5,8 @@
 }
 @font-face {
     font-family: 'Roboto-Semibold';
-    src: url('/fonts/Roboto-Medium.ttf') format('truetype'); /* Update the file format if needed */
-    font-weight: 600; /* Adjust the font weight */
+    src: url('/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 600;
 }
 @font-face {
     font-family: 'Roboto-Light';
@@ -86,7 +86,6 @@ body, ul {
     border-radius: 5px;
 }
 
-/* Styling for the dropdown menu */
 .header-module--categories ul {
     display: none;
     position: absolute;
@@ -130,8 +129,8 @@ body, ul {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    width: 70%; /* Adjust the width of the content */
-    max-width: 800px; /* Set a maximum width for the content */
+    width: 70%;
+    max-width: 800px; 
     padding: 20px;
     text-align: center;
 }
@@ -158,17 +157,6 @@ body, ul {
     text-decoration: none;
     text-align: center;
     line-height: 38px;
-    display: block; /* Convert to a block-level element for margin auto */
-    margin: 0 auto; /* Horizontal centering */
-}
-/* Set the div containing the img to 548x548 */
-div img {
-    width: 548px;
-    height: 548px;
-}
-
-/* Make the articles column position */
-section.intro {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    margin: 0 auto; 
 }
