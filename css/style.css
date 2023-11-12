@@ -233,7 +233,7 @@ body, ul {
     padding-right: 160px;
   }
 .review-card {
-    font-family: 'Roboto-bold';
+    font-family: 'Roboto-Bold', sans-serif;
     width: 326px;
     height: 241px;
     border-radius: 30px;
@@ -297,11 +297,11 @@ body, ul {
   }
   
   .stat-number {
-    font-family: 'Roboto-Bold';
+    font-family: 'Roboto-Bold', sans-serif;
     font-size: 45px;
   }
   
   .stat-label {
-    font-family: 'Roboto-Semibold';
+    font-family: 'Roboto-Semibold', sans-serif;
     font-size: 30px;
   }
