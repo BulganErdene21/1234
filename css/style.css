@@ -192,6 +192,8 @@ body, ul {
 .intro-pg {
     font-size: 20px;
     padding-left: 50px;
+
+
 }
 
 .intro-h2,
@@ -204,6 +206,7 @@ body, ul {
 }
   
 .intro-h2 {
+
     font-size: 45px;
     color: #000000;
 }
@@ -218,4 +221,55 @@ body, ul {
   
 .content-block:nth-child(2) .intro-text-holder {
     order: 2;
+}
+.stud-reviews-h2 {
+    font-size: 45px;
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+.review-card {
+    font-family: 'Roboto-bold';
+    width: 326px;
+    height: 241px;
+    border-radius: 30px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.student-image img {
+    border-radius: 50%; 
+}
+
+.student-info {
+    display: flex;
+    align-items: center;
+}
+
+.student-details {
+    margin-left: 10px; 
+}
+
+.stars {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.stars .star {
+    color: #ffd700; 
+    font-size: 20px; 
+    margin-right: 2px; 
+}
+.review-card {
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 0 10px 65px 45px rgba(0, 60, 255, 0.08);
+}
+.review-card p {
+    font-size: 15px;
 }
