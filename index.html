@@ -9,15 +9,14 @@
     <title>1234.mn | Нүүр Хуудас</title>
 </head>
 <body>
-    <head id="nav-bar">
-        <nav>
+    <header id="nav-bar">
+        <nav class="navigation-bar">
             <ul>
                 <li class="header-module--main"><a href="index.html"><img src="./icons/LOGO.png" alt="" width="91" height="34"></a></li>
                 <li class="header-module--categories"><a href="#">Сургалтууд</a></li>
                 <li class="header-module--search">
                     <form action="#">
-                        <input type="text" name="search" placeholder="Search">
-                        <input type="submit" value="Search">
+                        <input id="main-search" idtype="text" name="search" placeholder="Хайх...">
                     </form>
                 </li>
                 <li class="header-module--cart"><a href="#">
@@ -26,16 +25,16 @@
                 <li class="header-module--auth"><a href="#"><span>Нэвтрэх</span></a></li>
             </ul>
         </nav>
-    </head>
+    </header>
     <main>
         <section class="banner">
             <div class="banner-background"></div>
             <div class="banner-img"><img src="./img/Background imag 0.png" alt="main-background"></div>
             <div class="banner-content">
-                <h1>ХЯЗГААР ҮГҮЙ</h1>
-                <h3>СУРАЛЦ</h3>
-                <p>Боломжоо хүчирхэгжүүлж, ирээдүйгээ баталгаажуул. Өөрийгөө нээх, хувь хүний хязгааргүй өсөлт хөгжилтийн аянд бидэнтэй нэгдээрэй</p>
-                <a href="#">БИДЭНТЭЙ НЭГДЭХ</a>
+                <h1 class="banner-h1">ХЯЗГААР ҮГҮЙ</h1>
+                <span class="banner-span">СУРАЛЦ</span>
+                <p class="banner-p">Боломжоо хүчирхэгжүүлж, ирээдүйгээ баталгаажуул. Өөрийгөө нээх, хувь хүний хязгааргүй өсөлт хөгжилтийн аянд бидэнтэй нэгдээрэй</p>
+                <a class="banner-button" href="#">БИДЭНТЭЙ НЭГДЭХ</a>
             </div>
         </section>
         <section class="rec-courses">
@@ -55,7 +54,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./img/360_F_422239917_nRLYm6guQu9g6JMhJseXUhGSMgtBJ44x.jpg" alt="">
+                    <img src="./img/360_F_422239917_nRLYm6guQu9g6JMhJseXUhGSMgtBJ44x.jpg" alt="" style="color:transparent;background-size:cover;background-position:50% 50%;background-repeat:no-repeat;background-image:url(&quot;data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http%3A//www.w3.org/2000/svg' viewBox='0 0 499 472'%3E%3Cfilter id='b' color-interpolation-filters='sRGB'%3E%3CfeGaussianBlur stdDeviation='20'/%3E%3C/filter%3E%3Cimage preserveAspectRatio='none' filter='url(%23b)' x='0' y='0' height='100%25' width='100%25' href='data:image/png;base64,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'/%3E%3C/svg%3E&quot;)">
                 </div>
             </article>
             <article>
@@ -87,7 +86,7 @@
                 <div>
                     <div>
                         <div>
-                            <img src="" alt="">
+                            <img src="/img/v228_1099.png" alt="">
                         </div>
                         <div>
                             <p>Дорж Дорж</p>
@@ -113,7 +112,7 @@
                 <div>
                     <div>
                         <div>
-                            <img src="" alt="">
+                            <img src="/img/v228_1131.png" alt="">
                         </div>
                         <div>
                             <p>Дорж Дорж</p>
@@ -139,7 +138,7 @@
                 <div>
                     <div>
                         <div>
-                            <img src="" alt="">
+                            <img src="/img/v228_1142.png" alt="">
                         </div>
                         <div>
                             <p>Энэбиш Тэрбиш/p>
