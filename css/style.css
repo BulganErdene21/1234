@@ -278,7 +278,7 @@ body, ul {
     display: flex;
     justify-content: center;
     background-color: #4976CE;
-    width: 1440px;
+    width: auto;
     height: 150px;
   }
   
