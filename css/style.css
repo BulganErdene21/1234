@@ -308,7 +308,7 @@ body, ul {
     font-size: 30px;
   }
 .instructor{
-    margin: 150px;
+    margin: 100px;
     display: flex;
     padding-left: 160px;
     padding-right: 160px;
@@ -326,7 +326,7 @@ body, ul {
 
 .ring {
     position: absolute;
-    left: 150px;
+    margin-right: 200px;
     margin-bottom: 90px;
     width: 346px;
     height: 346px;
