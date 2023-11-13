@@ -33,9 +33,12 @@ body, ul {
 }
 
 #nav-bar {
+    display: flex;
+    flex-direction:row;
     padding-left: 160px;
     padding-right: 160px;
     background-color: #ffffff; 
+    justify-content: center;
     font-family: 'Roboto-Bold', sans-serif;
 }
 #main-search{
