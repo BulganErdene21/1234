@@ -169,9 +169,11 @@ body, ul {
 }
   
 .content-block {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 500px 500px;
+    gap: 20px
 }
   
 .intro-text-holder,
@@ -181,6 +183,7 @@ body, ul {
 }
   
 .intro-text-holder {
+    width: 500px;
     display:flex;
     flex-direction: column;
     justify-content: center;
