@@ -343,7 +343,6 @@ body, ul {
 }
 
 .text-content {
-    padding-left: 50px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -356,8 +355,8 @@ body, ul {
     padding-right: 30px;
 }
 .text-content h2{
+    width: 500px;
     font-size: 40px;
-    padding-right: 30px;
 }
 .text-content h2,
 .text-content p {
