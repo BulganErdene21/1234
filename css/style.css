@@ -52,7 +52,6 @@ body, ul {
     width: 624px;
     border-radius: 30px;
 }
-
 .navigation-bar ul {
     list-style: none;
     display: flex;
@@ -401,7 +400,9 @@ body, ul {
     color: #ffffff;
     background-color: #000000;
 }
-
+.course-content-holder{
+    font-family: 'Roboto-Bold';
+}
 .rec-courses {
     padding: 60px;
     display: flex;
