@@ -395,7 +395,8 @@ body, ul {
 
 .rec-courses-title h1{
     font-size: 45px;
-    font-family: 'Roboto-Light';
+    font-family: 'Roboto-Light', sans-serif;
+    font-weight: 300;
 }
 
 .rec-courses-holder {
@@ -403,6 +404,12 @@ body, ul {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+        font-family: 'Roboto', sans-serif;
+    
+}
+.rec-courses-holder span, 
+.rec-courses-holder strong{
+    font-family: 'Roboto', sans-serif;
 }
 
 .rec-courses-holder div{
