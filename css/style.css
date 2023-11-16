@@ -3,19 +3,23 @@
     src: url('/fonts/Roboto-Bold.ttf') format('truetype'); 
     font-weight: bold;
 }
+
 @font-face {
     font-family: 'Roboto-Semibold';
     src: url('/fonts/Roboto-Medium.ttf') format('truetype');
     font-weight: 600;
 }
+
 @font-face {
     font-family: 'Roboto-Light';
     src: url('/fonts/Roboto-Light.ttf') format('truetype'); 
     font-weight: lighter; 
 }
-a{
+
+a {
     font-family: 'Roboto-Semibold', sans-serif;
 }
+
 h1 {
     font-family: 'Roboto-Bold', sans-serif;
 }
@@ -27,6 +31,7 @@ h2 {
 p {
     font-family: 'Roboto-Light', sans-serif;
 }
+
 body, ul {
     margin: 0;
     padding: 0;
@@ -41,11 +46,13 @@ body, ul {
     justify-content: center;
     font-family: 'Roboto-Bold', sans-serif;
 }
+
 #main-search{
     height: 25px;
     width: 624px;
     border-radius: 30px;
 }
+
 .navigation-bar ul {
     list-style: none;
     display: flex;
