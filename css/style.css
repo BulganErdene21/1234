@@ -23,11 +23,10 @@ body, ul {
 #nav-bar {
     display: flex;
     flex-direction:row;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 10em; 
+    padding-right: 10em; 
     background-color: #ffffff; 
     justify-content: center;
-    font-family: 'Roboto-Bold', sans-serif;
 }
 
 #main-search{
@@ -42,7 +41,10 @@ body, ul {
     align-items: center;
     padding: 10px 20px;
 }
-
+.navigation-bar-list span{
+    font-family: 'Roboto-Bold', sans-serif;
+    
+}
 .navigation-bar a {
     text-decoration: none;
     color: 0F62FE;
@@ -99,7 +101,7 @@ body, ul {
 .banner-img {
     position: relative;
     overflow: hidden;
-    height: 550px;
+    height: 34em;
     width: 100%;
     margin: 0 auto; 
 }
@@ -127,12 +129,15 @@ body, ul {
 }
 
 .banner-h1 {
-    font-size: 80px;
+    font-size: 5rem; 
 }
 
 .banner-span {
-    font-size: 32px;
+    font-size: 2rem;
     font-family: 'Roboto-Semibold', sans-serif;
+}
+.banner-p {
+    font-size: 1.25rem;
 }
 
 .banner-h1,
@@ -158,8 +163,8 @@ body, ul {
 }
 
 .intro {
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 10em;
+    padding-right: 10em; 
 
 }
   
@@ -386,6 +391,7 @@ body, ul {
 .course-content-holder{
     font-family: 'Roboto-Bold';
 }
+
 .rec-courses {
     padding: 60px;
     display: flex;
@@ -410,6 +416,7 @@ body, ul {
 .rec-courses-holder span, 
 .rec-courses-holder strong{
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 
 .rec-courses-holder div{
@@ -417,14 +424,15 @@ body, ul {
 }
 
 .course {
-    width: 256px;
-    height: 295px;
+    width: 16em; 
+    height: 18em; 
     background-color: #f9f9f9;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: -3px 5px 0 0 #D9ECFF;
     margin: 10px;
 }
+
 
 .course-thumbnail-holder img {
     width: 100%;
@@ -525,4 +533,51 @@ body, ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+a {
+    text-decoration: none;
+}
+.course:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+.about-us {
+    margin-top: 60px;
+    padding-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.about {
+    display: grid;
+    height: 637px;
+    border-radius: 30px;
+    grid-template-columns: 500px 500px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 25px 5px rgba(0, 60, 255, 0.19);
+}
+.about-us-pic-container{
+    border-radius: 30px 0px 0px 30px;
+    width: 100%; /* Set the width of the container */
+    height: 100%; /* Set the height of the container; vh stands for viewport height */
+    background-image: url("/img/business-people-working-in-the-office-scaled.jpg"); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    filter: brightness(75%); 
+}
+.about img {
+    width: 500px;
+    height: 500px;
+}
+.about-us-content-container{
+    padding: 50px;
+}
+.about-us-content-container h2{
+    font-size: 45px;
+}
+.about-us-content-container p{
+    font-size: 20px;
 }
