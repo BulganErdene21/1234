@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    </script>
     <title>1234.mn | Нүүр Хуудас</title>
 </head>
 <body>
     <header id="nav-bar">
         <nav class="navigation-bar">
-            <ul>
+            <ul class="navigation-bar-list">
                 <li class="header-module--main"><a href="index.html"><img src="./icons/LOGO.png" alt="" width="91" height="34"></a></li>
                 <li class="header-module--categories"><a href="#">Сургалтууд</a></li>
                 <li class="header-module--search">
@@ -46,224 +47,232 @@
             </div>
             <div class="rec-courses-holder">
                 <article class="course">
-                    <div class="course-thumbnail-holder">
-                        <img src="./img/image.png" alt="thumbnail">
-                    </div>
-                    <div class="course-content-holder">
-                        <div class="course-title-holder">
-                            <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
-                            <div class="author">
-                                <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
-                                <span class="course-instructor-last-name">Алтанхуяг</span>
+                    <a href="course.html">
+                        <div class="course-thumbnail-holder">
+                            <img src="./img/image.png" alt="thumbnail">
+                        </div>
+                        <div class="course-content-holder">
+                            <div class="course-title-holder">
+                                <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
+                                <div class="author">
+                                    <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
+                                    <span class="course-instructor-last-name">Алтанхуяг</span>
+                                </div>
+                            </div>
+                            <div class="course-rating-holder">
+                                <span class="course-rating-section">
+                                    <div class="course-rating-index">
+                                        <strong>5.0 </strong>
+                                    </div>
+                                    <div class="ratings">
+                                        <ul class="stars" data-rating="5">
+                                            <li class="star" data-value="1">★</li>
+                                            <li class="star" data-value="2">★</li>
+                                            <li class="star" data-value="3">★</li>
+                                            <li class="star" data-value="4">★</li>
+                                            <li class="star" data-value="5">★</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <span class="course-viewer-section">
+                                    <strong>4.9K</strong>
+                                    <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
+                                </span>
+                            </div>
+                            <div class="content-holder">
+                                <span class="course-level-holder">
+                                    <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
+                                    <p class="course-level">Анхан шат</p>
+                                </span>
+                                <span class="course-term-holder">
+                                    <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
+                                    <p class="course-term-hours">52 цаг</p>
+                                    <p class="course-term-minutes">32 минут</p>
+                                </span>
+                                <span class="course-subject-holder">
+                                    <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
+                                    <p class="course-subject">197 хичээл</p>
+                                </span>
+                            </div>
+                            <div class="course-price-holder">
+                                <div class="price-holder">
+                                    <span class="price">49,500₮</span>
+                                    <span class="sale">50,000₮</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="course-rating-holder">
-                            <span class="course-rating-section">
-                                <div class="course-rating-index">
-                                    <strong>5.0 </strong>
-                                </div>
-                                <div class="ratings">
-                                    <ul class="stars" data-rating="5">
-                                        <li class="star" data-value="1">★</li>
-                                        <li class="star" data-value="2">★</li>
-                                        <li class="star" data-value="3">★</li>
-                                        <li class="star" data-value="4">★</li>
-                                        <li class="star" data-value="5">★</li>
-                                    </ul>
-                                </div>
-                            </span>
-                            <span class="course-viewer-section">
-                                <strong>4.9K</strong>
-                                <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
-                            </span>
-                        </div>
-                        <div class="content-holder">
-                            <span class="course-level-holder">
-                                <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
-                                <p class="course-level">Анхан шат</p>
-                            </span>
-                            <span class="course-term-holder">
-                                <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
-                                <p class="course-term-hours">52 цаг</p>
-                                <p class="course-term-minutes">32 минут</p>
-                            </span>
-                            <span class="course-subject-holder">
-                                <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
-                                <p class="course-subject">197 хичээл</p>
-                            </span>
-                        </div>
-                        <div class="course-price-holder">
-                            <div class="price-holder">
-                                <span class="price">49,500₮</span>
-                                <span class="sale">50,000₮</span>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </article>
                 <article class="course">
-                    <div class="course-thumbnail-holder">
-                        <img src="./img/image.png" alt="thumbnail">
-                    </div>
-                    <div class="course-content-holder">
-                        <div class="course-title-holder">
-                            <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
-                            <div class="author">
-                                <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
-                                <span class="course-instructor-last-name">Алтанхуяг</span>
+                    <a href="course.html">
+                        <div class="course-thumbnail-holder">
+                            <img src="./img/image.png" alt="thumbnail">
+                        </div>
+                        <div class="course-content-holder">
+                            <div class="course-title-holder">
+                                <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
+                                <div class="author">
+                                    <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
+                                    <span class="course-instructor-last-name">Алтанхуяг</span>
+                                </div>
+                            </div>
+                            <div class="course-rating-holder">
+                                <span class="course-rating-section">
+                                    <div class="course-rating-index">
+                                        <strong>5.0 </strong>
+                                    </div>
+                                    <div class="ratings">
+                                        <ul class="stars" data-rating="5">
+                                            <li class="star" data-value="1">★</li>
+                                            <li class="star" data-value="2">★</li>
+                                            <li class="star" data-value="3">★</li>
+                                            <li class="star" data-value="4">★</li>
+                                            <li class="star" data-value="5">★</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <span class="course-viewer-section">
+                                    <strong>4.9K</strong>
+                                    <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
+                                </span>
+                            </div>
+                            <div class="content-holder">
+                                <span class="course-level-holder">
+                                    <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
+                                    <p class="course-level">Анхан шат</p>
+                                </span>
+                                <span class="course-term-holder">
+                                    <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
+                                    <p class="course-term-hours">52 цаг</p>
+                                    <p class="course-term-minutes">32 минут</p>
+                                </span>
+                                <span class="course-subject-holder">
+                                    <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
+                                    <p class="course-subject">197 хичээл</p>
+                                </span>
+                            </div>
+                            <div class="course-price-holder">
+                                <div class="price-holder">
+                                    <span class="price">49,500₮</span>
+                                    <span class="sale">50,000₮</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="course-rating-holder">
-                            <span class="course-rating-section">
-                                <div class="course-rating-index">
-                                    <strong>5.0</strong>
-                                </div>
-                                <div class="ratings">
-                                    <ul class="stars" data-rating="5">
-                                        <li class="star" data-value="1">★</li>
-                                        <li class="star" data-value="2">★</li>
-                                        <li class="star" data-value="3">★</li>
-                                        <li class="star" data-value="4">★</li>
-                                        <li class="star" data-value="5">★</li>
-                                    </ul>
-                                </div>
-                            </span>
-                            <span class="course-viewer-section">
-                                <strong>4.9k</strong>
-                                <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
-                            </span>
-                        </div>
-                        <div class="content-holder">
-                            <span class="course-level-holder">
-                                <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
-                                <p class="course-level">Анхан шат</p>
-                            </span>
-                            <span class="course-term-holder">
-                                <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
-                                <p class="course-term-hours">52 цаг</p>
-                                <p class="course-term-minutes">32 минут</p>
-                            </span>
-                            <span class="course-subject-holder">
-                                <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
-                                <p class="course-subject">197 хичээл</p>
-                            </span>
-                        </div>
-                        <div class="course-price-holder">
-                            <div class="price-holder">
-                                <span class="price">49,500₮</span>
-                                <span class="sale">50,000₮</span>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </article>
                 <article class="course">
-                    <div class="course-thumbnail-holder">
-                        <img src="./img/image.png" alt="thumbnail">
-                    </div>
-                    <div class="course-content-holder">
-                        <div class="course-title-holder">
-                            <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
-                            <div class="author">
-                                <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
-                                <span class="course-instructor-last-name">Алтанхуяг</span>
+                    <a href="course.html">
+                        <div class="course-thumbnail-holder">
+                            <img src="./img/image.png" alt="thumbnail">
+                        </div>
+                        <div class="course-content-holder">
+                            <div class="course-title-holder">
+                                <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
+                                <div class="author">
+                                    <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
+                                    <span class="course-instructor-last-name">Алтанхуяг</span>
+                                </div>
+                            </div>
+                            <div class="course-rating-holder">
+                                <span class="course-rating-section">
+                                    <div class="course-rating-index">
+                                        <strong>5.0 </strong>
+                                    </div>
+                                    <div class="ratings">
+                                        <ul class="stars" data-rating="5">
+                                            <li class="star" data-value="1">★</li>
+                                            <li class="star" data-value="2">★</li>
+                                            <li class="star" data-value="3">★</li>
+                                            <li class="star" data-value="4">★</li>
+                                            <li class="star" data-value="5">★</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <span class="course-viewer-section">
+                                    <strong>4.9K</strong>
+                                    <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
+                                </span>
+                            </div>
+                            <div class="content-holder">
+                                <span class="course-level-holder">
+                                    <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
+                                    <p class="course-level">Анхан шат</p>
+                                </span>
+                                <span class="course-term-holder">
+                                    <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
+                                    <p class="course-term-hours">52 цаг</p>
+                                    <p class="course-term-minutes">32 минут</p>
+                                </span>
+                                <span class="course-subject-holder">
+                                    <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
+                                    <p class="course-subject">197 хичээл</p>
+                                </span>
+                            </div>
+                            <div class="course-price-holder">
+                                <div class="price-holder">
+                                    <span class="price">49,500₮</span>
+                                    <span class="sale">50,000₮</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="course-rating-holder">
-                            <span class="course-rating-section">
-                                <div class="course-rating-index">
-                                    <strong>5.0</strong>
-                                </div>
-                                <div class="ratings">
-                                    <ul class="stars" data-rating="5">
-                                        <li class="star" data-value="1">★</li>
-                                        <li class="star" data-value="2">★</li>
-                                        <li class="star" data-value="3">★</li>
-                                        <li class="star" data-value="4">★</li>
-                                        <li class="star" data-value="5">★</li>
-                                    </ul>
-                                </div>
-                            </span>
-                            <span class="course-viewer-section">
-                                <strong>4.9k</strong>
-                                <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
-                            </span>
-                        </div>
-                        <div class="content-holder">
-                            <span class="course-level-holder">
-                                <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
-                                <p class="course-level">Анхан шат</p>
-                            </span>
-                            <span class="course-term-holder">
-                                <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
-                                <p class="course-term-hours">52 цаг</p>
-                                <p class="course-term-minutes">32 минут</p>
-                            </span>
-                            <span class="course-subject-holder">
-                                <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
-                                <p class="course-subject">197 хичээл</p>
-                            </span>
-                        </div>
-                        <div class="course-price-holder">
-                            <div class="price-holder">
-                                <span class="price">49,500₮</span>
-                                <span class="sale">50,000₮</span>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </article>
                 <article class="course">
-                    <div class="course-thumbnail-holder">
-                        <img src="./img/image.png" alt="thumbnail">
-                    </div>
-                    <div class="course-content-holder">
-                        <div class="course-title-holder">
-                            <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
-                            <div class="author">
-                                <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
-                                <span class="course-instructor-last-name">Алтанхуяг</span>
+                    <a href="course.html">
+                        <div class="course-thumbnail-holder">
+                            <img src="./img/image.png" alt="thumbnail">
+                        </div>
+                        <div class="course-content-holder">
+                            <div class="course-title-holder">
+                                <strong class="course-title">JavaScript: Тэгээс мэргэжилтэн хүртэл!</strong>
+                                <div class="author">
+                                    <span class="course-instructor-first-name">Булган-Эрдэнэ</span>
+                                    <span class="course-instructor-last-name">Алтанхуяг</span>
+                                </div>
+                            </div>
+                            <div class="course-rating-holder">
+                                <span class="course-rating-section">
+                                    <div class="course-rating-index">
+                                        <strong>5.0 </strong>
+                                    </div>
+                                    <div class="ratings">
+                                        <ul class="stars" data-rating="5">
+                                            <li class="star" data-value="1">★</li>
+                                            <li class="star" data-value="2">★</li>
+                                            <li class="star" data-value="3">★</li>
+                                            <li class="star" data-value="4">★</li>
+                                            <li class="star" data-value="5">★</li>
+                                        </ul>
+                                    </div>
+                                </span>
+                                <span class="course-viewer-section">
+                                    <strong>4.9K</strong>
+                                    <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
+                                </span>
+                            </div>
+                            <div class="content-holder">
+                                <span class="course-level-holder">
+                                    <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
+                                    <p class="course-level">Анхан шат</p>
+                                </span>
+                                <span class="course-term-holder">
+                                    <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
+                                    <p class="course-term-hours">52 цаг</p>
+                                    <p class="course-term-minutes">32 минут</p>
+                                </span>
+                                <span class="course-subject-holder">
+                                    <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
+                                    <p class="course-subject">197 хичээл</p>
+                                </span>
+                            </div>
+                            <div class="course-price-holder">
+                                <div class="price-holder">
+                                    <span class="price">49,500₮</span>
+                                    <span class="sale">50,000₮</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="course-rating-holder">
-                            <span class="course-rating-section">
-                                <div class="course-rating-index">
-                                    <strong>5.0</strong>
-                                </div>
-                                <div class="ratings">
-                                    <ul class="stars" data-rating="5">
-                                        <li class="star" data-value="1">★</li>
-                                        <li class="star" data-value="2">★</li>
-                                        <li class="star" data-value="3">★</li>
-                                        <li class="star" data-value="4">★</li>
-                                        <li class="star" data-value="5">★</li>
-                                    </ul>
-                                </div>
-                            </span>
-                            <span class="course-viewer-section">
-                                <strong>4.9k</strong>
-                                <img class="views-icon" src="./icons/v130_321.png" alt="viewer-icon" height="15px" width="15px">
-                            </span>
-                        </div>
-                        <div class="content-holder">
-                            <span class="course-level-holder">
-                                <img class="course-level-icon" src="./icons/46396.png" alt="course-level" height="15px" width="15px">
-                                <p class="course-level">Анхан шат</p>
-                            </span>
-                            <span class="course-term-holder">
-                                <img class="course-term-icon" src="./icons/v130_310.png" alt="term of study" height="15px" width="15px">
-                                <p class="course-term-hours">52 цаг</p>
-                                <p class="course-term-minutes">32 минут</p>
-                            </span>
-                            <span class="course-subject-holder">
-                                <img class="course-subject-icon" src="./icons/v130_317.png" alt="subject-icon" height="15px" width="15px">
-                                <p class="course-subject">197 хичээл</p>
-                            </span>
-                        </div>
-                        <div class="course-price-holder">
-                            <div class="price-holder">
-                                <span class="price">49,500₮</span>
-                                <span class="sale">50,000₮</span>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
                 </article>
             </div>
         </section>
@@ -394,16 +403,14 @@
             </article>
         </section>
         <section class="about-us">
-            <article>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h2>Бидний тухай</h2>
-                    <p>1234.mn бидний эрхэм зорилго нь хүртээмжтэй, уян хатан, олон төрлийн онлайн сургалтуудыг санал болгосноор боловсролд хувьсгал хийх явдал юм.</p>
-                    <p>Суралцах нь ямар ч хил хязгааргүй байх ёстой гэдэгт манай баг хамт олон итгэдэг бөгөөд хувь хүмүүст мэдлэг,  ур чадвараа хөгжүүлэхэд хувь нэмрээ оруулахаар 
+            <article class="about">
+                <div class="about-us-pic-container"></div>
+                <div class="about-us-content-container">
+                    <h2 class="about-us-title">Бидний тухай</h2>
+                    <p class="about-us-p">1234.mn бидний эрхэм зорилго нь хүртээмжтэй, уян хатан, олон төрлийн онлайн сургалтуудыг санал болгосноор боловсролд хувьсгал хийх явдал юм.</p>
+                    <p class="about-us-p">Суралцах нь ямар ч хил хязгааргүй байх ёстой гэдэгт манай баг хамт олон итгэдэг бөгөөд хувь хүмүүст мэдлэг,  ур чадвараа хөгжүүлэхэд хувь нэмрээ оруулахаар 
                         зардал багатай, интерактив, насан туршын боловсролыг бий болгохын төлөө манай баг ажиллаж байна.</p>
-                    <p>Тасралтгүй суралцах аянд бидэнтэй нэгдээрэй.</p>
+                    <p class="about-us-p">Тасралтгүй суралцах аянд бидэнтэй нэгдээрэй.</p>
                 </div>
             </article>
         </section>
