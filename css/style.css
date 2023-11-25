@@ -587,9 +587,9 @@ a {
 }
 .about {
     display: grid;
-    height: 637px;
+    height: 637px / 16rem;
     border-radius: 30px;
-    grid-template-columns: 500px 500px;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 25px 5px rgba(0, 60, 255, 0.19);
@@ -606,7 +606,7 @@ a {
 }
 .about img {
     width: 500px;
-    height: 500px;
+    height: 100%;
 }
 .about-us-content-container{
     padding: 50px;
@@ -622,11 +622,25 @@ a {
     .rec-courses-holder {
         grid-auto-columns: calc((100% / 1) - 80px);
     }
+    .content-block {
+        display: block;
+    }
+    .intro {
+        display: grid;
+        justify-content: center;
+    }
+    .instructor article {
+        display: grid;
+        grid-template-columns: 1fr
+    };
 }
 @media (min-width: 481px) and (max-width: 800px){
     .rec-courses-holder {
         grid-auto-columns: calc((100% / 2) - 10px);
         max-width: 900px;
+    }
+    .content-block {
+        display: block;
     }
     .intro {
         display: grid;
