@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/auth-style.css">
+    <title>Бүртгүүлэх</title>
 </head>
 <body>
-    
-</body>
+    <div class="aut-container">
+        <div class="slide-controls">
+            <input type="radio" name="slide" id="login" checked>
+            <input type="radio" name="slide" id="signup">
+            <label for="login" class="slide login">НЭВТРЭХ</label>
+            <label for="signup" class="slide signup">БҮРТГҮҮЛЭХ</label>
+            <div class="slider-tab"></div>
+        </div>
+        <div class="wrapper">
+        <div class="form-container">
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="field">
+                    <input type="text" placeholder="Имэйл Хаяг..." required>
+                    </div>
+                    <div class="field">
+                    <input type="password" placeholder="Нууц Үг..." required>
+                    </div>
+                    <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="НЭВТРЭХ">
+                    </div>
+                    <div class="signup-link">
+                    Бүртгүүлээгүй юу? <a href="">БҮРТГҮҮЛЭХ</a>
+                    </div>
+                </form>
+                <form action="#" class="signup">
+                    <div class="field">
+                    <input type="text" placeholder="Имэйл Хаяг..." required>
+                    </div>
+                    <div class="field">
+                    <input type="password" placeholder="Нууц Үг..." required>
+                    </div>
+                    <div class="field">
+                    <input type="password" placeholder="Нууц Үг..." required>
+                    </div>
+                    <div class="field btn">
+                    <div class="btn-layer"></div>
+                    <input type="submit" value="БҮРТГҮҮЛЭХ">
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="./js/auth.js"></script>
+ </body>
 </html>
