@@ -164,11 +164,7 @@ body, ul {
     margin: 0 auto; 
 }
 
-.intro {
-    padding-left: 10em;
-    padding-right: 10em; 
 
-}
   
 .content-block {
     display: grid;
@@ -223,12 +219,6 @@ body, ul {
 
 .stud-reviews-h2 {
     font-size: 45px;
-}
-
-.reviews {
-    display: flexbox;
-    padding-left: 160px;
-    padding-right: 160px;
 }
 
 .reviews h2,
@@ -311,10 +301,9 @@ body, ul {
 }
 
 .instructor {
-    margin: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
-    padding-left: 160px;
-    padding-right: 160px;
     justify-content: center;
     flex-direction: column;
 
@@ -347,14 +336,13 @@ body, ul {
 }
 
 .text-content {
-    display:flex;
-    flex-direction: column;
+    display:grid;
     justify-content: center;
     box-align: center;
-    order: 1;
 }
 
 .text-content p{
+    width: 420px;
     font-size: 20px;
     padding-left: 50px;
     padding-right: 30px;
@@ -435,8 +423,8 @@ body, ul {
 
 .course {
     scroll-snap-align: start;
-    width: 100%; /* Set the initial width to 100% */
-    max-width: 16em; /* Set a maximum width for larger screens */
+    width: 100%; 
+    max-width: 295px; 
     height: auto;
     background-color: #f9f9f9;
     border-radius: 15px;
@@ -582,8 +570,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 320px;
+    padding-right: 320px;
 }
 .about {
     display: grid;
@@ -625,19 +613,13 @@ a {
     .content-block {
         display: block;
     }
-    .intro {
-        display: grid;
-        justify-content: center;
-    }
-
     .instructor article {
-        display: grid;
         grid-template-columns: 1fr
     };
 }
 @media (min-width: 481px) and (max-width: 800px){
     .rec-courses-holder {
-        grid-auto-columns: calc((100% / 2) - 10px);
+        grid-auto-columns: calc(100% / 2);
         max-width: 900px;
     }
     .content-block {
@@ -647,10 +629,13 @@ a {
         display: grid;
         justify-content: center;
     }
+    .instructor article {
+        grid-template-columns: 1fr
+    };
 }
 @media (min-width: 801px) and (max-width: 1200px){
     .rec-courses-holder {
-        grid-auto-columns: calc((100% / 3) - 20px);
+        grid-auto-columns: calc(100% / 3);
         max-width: 1200px;
     }
     .rec-courses {
@@ -663,6 +648,9 @@ a {
         display: grid;
         justify-content: center;
     }
+    .instructor article {
+        grid-template-columns: 1fr;
+    };
 }
 @media (min-width: 1201px) and (max-width: 1600px){
     .rec-courses-holder {
