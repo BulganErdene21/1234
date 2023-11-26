@@ -629,6 +629,7 @@ a {
         display: grid;
         justify-content: center;
     }
+
     .instructor article {
         display: grid;
         grid-template-columns: 1fr
