@@ -265,16 +265,17 @@ body, ul {
 
 .statistics {
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
     background-color: #4976CE;
     width: auto;
     height: 150px;
   }
-  
+.stat-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    flex-direction: row;
+  }
 .stat {
-    padding-left: 120px;
-    padding-right: 120px;
     margin-top: 20px;
     color: white;
     text-align: center;
@@ -603,6 +604,7 @@ a {
 }
 
 @media (max-width: 610px){
+    
     .rec-courses-holder {
         grid-auto-columns: calc((100% / 1) - 80px);
     }
@@ -641,6 +643,7 @@ a {
         grid-auto-columns: calc(100% / 2);
         max-width: 900px;
     }
+    
     .banner-h1 {
         font-size: 3rem; 
     }    
