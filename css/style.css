@@ -1,4 +1,6 @@
-
+html{
+    font-size: 100%;
+}
 a {
     font-family: 'Roboto-Semibold', sans-serif;
 }
@@ -189,8 +191,6 @@ body, ul {
 .intro-pg {
     font-size: 1.25rem;
     padding-left: 50px;
-
-
 }
 
 .intro-h2,
@@ -267,14 +267,19 @@ body, ul {
     margin-top: 50px;
     background-color: #4976CE;
     width: auto;
+    max-width: 100%; /* Ensure full width */
     height: 150px;
-  }
-.stat-container {
     display: flex;
-    justify-content: center;
-    gap: 200px;
+    justify-content: center; /* Center the child elements horizontally */
+}
+
+.stat-container {
+    max-width: 800px;
+    width: 100%; /* Take the full width of the parent container */
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
-  }
+}
 .stat {
     margin-top: 20px;
     color: white;
@@ -604,7 +609,41 @@ a {
 }
 
 @media (max-width: 610px){
-    
+    .text-content a{
+        margin-left: 135px;
+    }
+    .ring {
+        width: 250px;
+        height: 250px;
+        margin-left: 60px;
+    }
+    .instructor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .image-container img{
+        width: 300px;
+    }
+    html{
+        font-size: 60%;
+        justify-content: center;
+        text-align: center;
+    }
+    .intro-pg {
+        padding-left: 0px;
+    }
+    #main-search {
+        width: 50px; 
+    }
+    .intro-text-holder{
+        max-width: 374px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .rec-courses-holder {
         grid-auto-columns: calc((100% / 1) - 80px);
     }
@@ -612,7 +651,7 @@ a {
         display: block;
     }
     .instructor article {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     };
     .banner-img {
         width: 100%;
@@ -639,6 +678,9 @@ a {
     } 
 }
 @media (min-width: 481px) and (max-width: 800px){
+    html{
+        font-size: 90%;
+    }
     .rec-courses-holder {
         grid-auto-columns: calc(100% / 2);
         max-width: 900px;
