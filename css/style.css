@@ -401,7 +401,7 @@ body, ul {
     cursor: pointer;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    scrollbar-width: 0;
+
 }
 .rec-courses-holder::-webkit-scrollbar {
     display: none;
