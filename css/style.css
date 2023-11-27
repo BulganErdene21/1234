@@ -577,7 +577,7 @@ a {
 }
 .about {
     display: grid;
-    height: 637px / 16rem;
+    height: 39.813rem;
     border-radius: 30px;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
