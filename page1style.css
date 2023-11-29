@@ -1,0 +1,118 @@
+.title {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .title1 {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container {
+    text-align: center;
+  }
+  .box {
+    border: 1px solid black;
+    width: 15%;
+    height: 250px;
+    margin: 8px;
+    display: inline-block;
+    border-radius: 5px;
+  }
+  .texts {
+    font-size: 8px;
+    text-align: left;
+    padding-left: 3px; 
+  }
+  .space {
+    margin-bottom: 3px;
+  }
+  .texts1 {
+    display: inline;
+    font-size: 9px;
+    float: left;
+    padding-left: 3px;
+  }
+  .texts2 {
+    display: inline;
+    font-size: 9px;
+    float: right;
+    padding-right: 3px;
+  }
+  .title2 {
+    display: inline;
+    float: left;
+  }
+  .section2 {
+    width: 65%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline;
+    float: right;
+  }
+  .dropbtn {
+    background-color: white;
+    color: #778899;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 15px;
+    border-color: #778899;
+    cursor: pointer;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  .dropdown:hover .dropdown-content {display: block;}
+
+
+  .section3 {
+    float: left;
+    margin-left: 17.5%;
+    margin-right: auto;
+    width: 12%;
+    background-color: aliceblue;
+  }
+  .check {
+    background-color: gray;
+    border-bottom: 1px solid black;
+  }
+
+  .container1 {
+    margin-left: 32.5%;
+    margin-right: 17.5%;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 230px 230px 230px;
+    gap: 10px;
+    padding: 10px;
+    
+  }
+  .box1 {
+    display: inline-block;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
