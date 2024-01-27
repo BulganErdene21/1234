@@ -6,11 +6,12 @@ html{
     margin: 0;
     padding: 0;
 }
+
 .logo {
     width: 120px;
 }
 body {
-    background-color: hsl(252, 30%, 95%);
+    background-color: hsl(0, 0%, 100%);
     color: hsl(252, 30%, 17%);
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -130,11 +131,11 @@ header.sticky .search-bar  input[type="search"] {
 section {
     padding-left: 80px;
     padding-right: 80px;
-
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .background-clip {
     position: absolute;
-    
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -437,27 +438,22 @@ header.sticky .cart img{
     font-family: 'Roboto-Bold';
 }
 
-.rec-courses {
-    margin: 60px;
+.rec-courses-title{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
-    position: relative;
 }
-
 .rec-courses-title h1{
     font-size: 2.813rem;
     font-family: 'Roboto-Light', sans-serif;
     font-weight: 300;
 }
-
+.rec-courses-title {
+    padding-bottom: 20px;
+}
 .rec-courses-holder {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 5) - 50px);
-    max-width: 1600px;
-    gap: 15px;
+    display: flex;
+    justify-content: space-between;
     overflow: hidden;
     cursor: pointer;
     scroll-snap-type: x mandatory;
@@ -470,11 +466,12 @@ header.sticky .cart img{
 .rec-courses-holder span, 
 .rec-courses-holder strong{
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: rgb(35, 44, 99);
 }
 .rec-courses-holder div{
     margin: 0;
 }
+
 .rec-courses-holder.dragging{
     scroll-snap-type: none;
     scroll-behavior: auto;
@@ -485,17 +482,63 @@ header.sticky .cart img{
 }
 
 .course {
+    align-items: center;
     scroll-snap-align: start;
-    width: 100%; 
-    max-width: 295px; 
+    width: 100%;
+    max-width: 295px;
     height: auto;
     background-color: #f9f9f9;
     border-radius: 15px;
+    border: 5px solid #ffffff;
     overflow: hidden;
-    box-shadow: -3px 5px 0 0 #D9ECFF;
+    box-shadow: 0 0 10px 0 rgb(219, 164, 252);
     margin: 10px;
+    transition: ease 0.2s height; 
+    position: relative;
 }
 
+.course:not(:hover) {
+    height: auto; 
+}
+
+.cart-container {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    transition: ease 0.2s;
+}
+
+.add-to-cart {
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #ffffff;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 50px;
+    margin: 0;
+    background: hsl(253, 47%, 63%);
+    color: #ffffff;
+    box-shadow: 0 5px 10px 2px rgb(219, 164, 252);
+    border-radius: 5px;
+    transition: ease 0.2s;
+}
+
+.course:hover .cart-container {
+    height: auto;
+    opacity: 1;
+}
+
+.add-to-cart:hover {
+    transform: scale(1.03);
+}
 
 .course-thumbnail-holder img {
     width: 100%;
@@ -591,29 +634,7 @@ header.sticky .cart img{
     text-decoration: line-through;
 }
 
-.rec-courses i {
-    height: 50px;
-    width: 50px;
-    background: #2e2d2d;
-    color: #ffffff;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    font-size: 1.25rem;
-    transform: translateY(-50%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
-}
-.rec-courses i:first-child{
-    top: 65%;
-    left: -22px;
-}
-.rec-courses i:last-child{
-    top: 65%;
-    right: -22px;
-}
+
 .course-rating-section{
     font-size: 0.813rem;
     display: flex;
@@ -624,7 +645,7 @@ a {
     text-decoration: none;
 }
 .course:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.03);
 }
 
 .about-us {
@@ -669,186 +690,4 @@ a {
     font-size: 1.25rem;
 }
 
-@media (max-width: 610px){
-    .text-content a{
-        margin-left: 135px;
-    }
-    .ring {
-        width: 250px;
-        height: 250px;
-        margin-left: 60px;
-    }
-    .instructor {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 100%;
-        overflow: hidden;
-    }
-    .image-container img{
-        width: 300px;
-    }
-    html{
-        font-size: 60%;
-        justify-content: center;
-        text-align: center;
-    }
-    .intro-pg {
-        padding-left: 0px;
-    }
-    .main-search {
-        width: 50px; 
-    }
-    .intro-text-holder{
-        max-width: 374px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .rec-courses-holder {
-        grid-auto-columns: calc((100% / 1) - 80px);
-    }
-    .content-block {
-        display: block;
-    }
-    .instructor article {
-        grid-template-columns: 1fr;
-    }
-    .banner-img {
-        width: 100%;
-        height: 0; 
-        padding-bottom: 60%;
-        position: relative;
-    }
-    .banner-img img {
-        width: 100%; /* Make sure the image takes 100% of the container width */
-        height: 100%; /* Make sure the image takes 100% of the container height */
-        object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .banner-h1 {
-        font-size: 3rem; 
-    }    
-    .banner-span {
-        font-size: 1.5rem; 
-    }    
-    .banner-p {
-        font-size: 0.85rem;
-    } 
-}
-@media (min-width: 481px) and (max-width: 800px){
-    html{
-        font-size: 90%;
-    }
-    .rec-courses-holder {
-        grid-auto-columns: calc(100% / 2);
-        max-width: 900px;
-    }
-    
-    .banner-h1 {
-        font-size: 3rem; 
-    }    
-    .banner-p {
-        font-size: 0.85rem;
-    } 
-    
-    .content-block {
-        display: block;
-    }
-    .intro {
-        display: grid;
-        justify-content: center;
-    }
-    .instructor article {
-        grid-template-columns: 1fr
-    }
-    .banner-img {
-        width: 100%;
-        height: 0; 
-        padding-bottom: 60%;
-        position: relative;
-    }
-    .banner-img img {
-        width: 100%; /* Make sure the image takes 100% of the container width */
-        height: 100%; /* Make sure the image takes 100% of the container height */
-        object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .main-search {
-        width: 150px; 
-    }
-}
-@media (min-width: 801px) and (max-width: 1200px){
-    .rec-courses-holder {
-        grid-auto-columns: calc(100% / 3);
-        max-width: 1200px;
-    }
-    .rec-courses {
-        max-width: 1200px;
-    }
-    .banner-h1 {
-        font-size: 3rem; 
-    }
-    .banner-span {
-        font-size: 1rem;
-    }
-    .content-block {
-        display: block;
-    }
-    .banner-p {
-        font-size: 0.85rem;
-    } 
-    .intro {
-        display: grid;
-        justify-content: center;
-    }
-    .instructor article {
-        grid-template-columns: 1fr;
-    }
-    .banner-img {
-        width: 100%;
-        height: 0; 
-        padding-bottom: 60%;
-        position: relative;
-    }
-    .banner-img img {
-        width: 100%; /* Make sure the image takes 100% of the container width */
-        height: 100%; /* Make sure the image takes 100% of the container height */
-        object-fit: cover; /* Cover the entire container, maintaining aspect ratio */
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .main-search {
-        width: 250px; 
-    }
-}
-@media (min-width: 1201px) and (max-width: 1600px){
-    .rec-courses-holder {
-        grid-auto-columns: calc((100% / 4) - 10px);
-        max-width: 1200px;
-    }
-    .content-block:nth-child(2) .intro-img-holder {
-        order: 1;
-    }
-      
-    .content-block:nth-child(2) .intro-text-holder {
-        order: 2;
-    }
-    .main-search {
-        width: 450px; 
-    }
-}
-@media (min-width: 1601px){
-    .content-block:nth-child(2) .intro-img-holder {
-        order: 1;
-    }
-      
-    .content-block:nth-child(2) .intro-text-holder {
-        order: 2;
-    }
-}
+
