@@ -228,53 +228,6 @@ header.sticky .cart img{
         transform: translateY(100px);
     }
 }
-.content-block {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 500px 500px;
-    gap: 20px;
-}
-  
-.intro-text-holder,
-.intro-img-holder {
-    flex: 1;
-    padding: 20px;
-}
-  
-.intro-text-holder {
-    width: 500px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    order: 1;
-}
-
-.intro-pg {
-    font-size: 1.25rem;
-    padding-left: 50px;
-}
-
-.intro-h2,
-.intro-pg {
-    margin: 0;
-}
-
-.intro-img-holder {
-    order: 2;
-}
-  
-.intro-h2 {
-
-    font-size: 2.813rem;
-    color: #000000;
-}
-  
-.intro-img-holder img {
-    max-width: 100%;
-    height: auto;
-}
 
 .stud-reviews-h2 {
     font-size: 2.813rem;
@@ -437,23 +390,34 @@ header.sticky .cart img{
 .course-content-holder{
     font-family: 'Roboto-Bold';
 }
-
-.rec-courses-title{
+.rec-courses{ 
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    background: radial-gradient(circle at 10% 20%, rgb(255, 246, 236) 39.5%, rgba(100, 46, 122, 0.23) 100.2%);
+}
+.rec-courses-title{
+    padding-left: 30px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.rec-courses-title h3{
+    font-size: 2.413rem;
+    font-weight: 400;
+    color: #9348c5;
 }
 .rec-courses-title h1{
-    font-size: 2.813rem;
-    font-family: 'Roboto-Light', sans-serif;
-    font-weight: 300;
+    font-size: 3.413rem;
+    font-weight: 500;
+
 }
 .rec-courses-title {
     padding-bottom: 20px;
 }
 .rec-courses-holder {
-    display: flex;
-    justify-content: space-between;
+    white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
     scroll-snap-type: x mandatory;
@@ -482,16 +446,15 @@ header.sticky .cart img{
 }
 
 .course {
-    align-items: center;
-    scroll-snap-align: start;
+    display: inline-block;
     width: 100%;
-    max-width: 295px;
+    max-width: 350px;
     height: auto;
     background-color: #f9f9f9;
-    border-radius: 15px;
-    border: 5px solid #ffffff;
+    border-radius: 8px;
+    border: 2px solid #ffffff;
     overflow: hidden;
-    box-shadow: 0 0 10px 0 rgb(219, 164, 252);
+    box-shadow: 0 0 20px -5px #a3a1a5;;
     margin: 10px;
     transition: ease 0.2s height; 
     position: relative;
@@ -526,7 +489,7 @@ header.sticky .cart img{
     margin: 0;
     background: hsl(253, 47%, 63%);
     color: #ffffff;
-    box-shadow: 0 5px 10px 2px rgb(219, 164, 252);
+    box-shadow: 0 5px 10px 2px rgb(120, 95, 134);
     border-radius: 5px;
     transition: ease 0.2s;
 }
@@ -560,6 +523,7 @@ header.sticky .cart img{
     margin-bottom: 10px;
     font-size: 0.875rem;
 }
+
 
 .author {
     color: #777;
@@ -644,18 +608,150 @@ header.sticky .cart img{
 a {
     text-decoration: none;
 }
-.course:hover {
-    transform: scale(1.03);
+.carousel {
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
 }
-
-.about-us {
-    margin-top: 60px;
-    padding-bottom: 80px;
+.carousel_inner{
+    height: 600px;
     display: flex;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 10px 20px 5px #a3a1a5;;
+ }
+ 
+ .carousel_inner::after{
+    content: "";
+    display: block;
+    clear: both;
+ }
+
+ .carousel_item {
     justify-content: center;
     align-items: center;
-    padding-left: 320px;
-    padding-right: 320px;
+    position: relative;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%m 0.25);
+    float: left;
+    display: none;
+    max-width: 100%;
+    margin-right: -100%;
+ }
+ 
+ /* slide effect */
+ .carousel_item__active,
+ .carousel_item__pos_next{
+    display: block;
+ }
+ 
+ .carousel_item__pos_next{
+    left: 100%;
+ }
+ 
+ .carousel_item__next{
+    transform: translateX(-100%);
+    transition: transform .5s ease-in-out;
+ }
+ 
+ /* fade effect */
+ .carousel__fade .carousel_item__pos_next{
+    left: 0;
+    opacity: 0;
+ }
+ 
+ .carousel__fade .carousel_item__next{
+    transform: none;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+ }
+ 
+ .carousel__fade .carousel_item__active.carousel_item__next{
+    opacity: 0;
+ }
+ 
+ /* carousel */
+ .carousel_img{
+    display: flex;
+    object-fit: cover;
+    max-width: 100%;
+    filter: brightness(40%);
+ }
+ .carousel_caption-1 {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    top: 30%;
+    left: 0;
+
+ }
+ .carousel_caption-1  {
+    width: 50%;
+    padding-left: 60px;
+}
+.carousel_caption-1  h1{
+    font-size:  4.8rem;
+    line-height: 1;
+    color: #f9f9f9;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.carousel_caption-1  p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.carousel_caption-2 {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    top: 30%;
+    left: 0;
+
+ }
+ .carousel_caption-2  {
+    width: 50%;
+    padding-left: 60px;
+}
+.carousel_caption-2  h1{
+    font-size:  4.8rem;
+    line-height: 1;
+    color: #f9f9f9;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.carousel_caption-2  p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.carousel_caption-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+ }
+.carousel_caption-3  h1{
+    font-size:  3.8rem;
+    line-height: 1;
+    color: #f9f9f9;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.carousel_caption-3  p {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 .about {
     display: grid;
@@ -668,7 +764,7 @@ a {
 }
 .about-us-pic-container{
     border-radius: 30px 0px 0px 30px;
-    width: 100%;
+    max-width: 100%;
     height: 100%; 
     background-image: url("/img/business-people-working-in-the-office-scaled.jpg");
     background-size: cover; 
