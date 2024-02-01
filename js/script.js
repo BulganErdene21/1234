@@ -44,7 +44,6 @@ function slide(toIndex) {
     const itemsArray = Array.from(document.querySelectorAll(".carousel_item"));
     const itemActive = document.querySelector(".carousel_item__active");
 
-    // check if toIndex exceeds the number of carousel items
     if (toIndex >= itemsArray.length) {
         toIndex = 0;
     }
